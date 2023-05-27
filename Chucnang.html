@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" href="chucnang.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chucnang</title>
+</head>
+<body>
+    <script language="javascript" src="chucnang.js"></script>
+    <script src="jquery.js"></script>
+    <div class="chucnangchung">
+        <div class="main-chucnang">
+            <div class="tab-container">
+                <div class="tab not-active" onclick="openTab(event, 'tab1')">Text</div>
+                <div class="tab not-active" onclick="openTab(event, 'tab2')">Font</div>
+                <div class="tab not-active" onclick="openTab(event, 'tab3')">Color</div>
+              </div>
+            <div class="chucnangtong">
+                <div class="tabchuyendoi">
+                    <div id="tab1" class="nhaptext tab-content">
+                        <textarea placeholder="ENTER TEXT HERE &#10; Press Enter/Return for a new line" id="nhaptext" oninput="replaceText()"></textarea>
+                    </div>
+                    <div id="tab2" class="chonchucnang tab-content">
+                        <p>CHOOSE FONT</p>
+                        <div class="formstyle">
+                            <ul class="bang">
+                                <li onClick="setFont('Arial'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/alexa.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Open Sans'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Helvetica'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                                <li onClick="setFont('Roboto'),toggleActiveClass(event)"  class="custom-font"><span><img src="https://customneon.com/create-neon-sign/images/fonts/barcelona.svg" ></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-content">
+                        <div class="mauchu" id="mauchu">
+                            <i class="mau1 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 253, 207)'),toggleActiveClass1(event)" style="color:rgb(255, 253, 207)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau2 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(225, 227, 230)'),toggleActiveClass1(event)" style="color:rgb(225, 227, 230)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau3 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 249, 124)',toggleActiveClass1(event))" style="color:rgb(255, 249, 124)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau4 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 214, 46)'),toggleActiveClass1(event)" style="color:rgb(255, 214, 46)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau5 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 141, 2)'),toggleActiveClass1(event)" style="color:rgb(255, 141, 2)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau6 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 117, 117)'),toggleActiveClass1(event)" style="color:rgb(255, 117, 117)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau7 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 42, 77)'),toggleActiveClass1(event)" style="color:rgb(255, 42, 77)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau8 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 144, 255)'),toggleActiveClass1(event)" style="color:rgb(255, 144, 255)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau9 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(234, 164, 255)'),toggleActiveClass1(event)" style="color:rgb(234, 164, 255)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau10 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(255, 92, 232)'),toggleActiveClass1(event)" style="color:rgb(255, 92, 232)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau11 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(140, 89, 255)'),toggleActiveClass1(event)" style="color:rgb(140, 89, 255)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau12 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(2, 116, 252)'),toggleActiveClass1(event)" style="color:rgb(2, 116, 252)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau13 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(99, 170, 255)'),toggleActiveClass1(event)" style="color:rgb(99, 170, 255)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau14 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(144, 220, 255)'),toggleActiveClass1(event)" style="color:rgb(144, 220, 255)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau15 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(36, 183, 222)'),toggleActiveClass1(event)" style="color:rgb(36, 183, 222)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau16 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(128, 255, 217)'),toggleActiveClass1(event)" style="color:rgb(128, 255, 217)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau17 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(133, 255, 170)'),toggleActiveClass1(event)" style="color:rgb(133, 255, 170)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <i class="mau18 custom-color fa fa-lightbulb-o" onClick="changeTextColor('rgb(11, 215, 72)'),toggleActiveClass1(event)" style="color:rgb(11, 215, 72)" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hienthichucnang">
+            <div class="button-switch">
+                <input id="checkbox" name="checkbox" type="checkbox" onchange="toggleClass()">
+                <label class="label" for="checkbox"></label>
+            </div>  
+            <p id="chuhienthi">Hiển Thị</p>
+        </div>
+    </div>
+</body>
+</html>

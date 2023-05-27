@@ -1,0 +1,449 @@
+.hienthichucnang p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.formstyle img{
+    height: 40px;
+    width: 85px;
+}
+.formstyle ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: start;
+    padding-inline-start: 0px;
+}
+.formstyle li{
+    list-style: none;
+    cursor: pointer;
+    break-inside: avoid-page;
+}
+.chucnangtong{
+    display: flex;
+    justify-content: center;
+}
+.mauchu i{
+    height: 20px;
+    width: 20px;
+   cursor: pointer;
+   margin: 10px;
+}
+.bang li{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    height: 40px;
+    width: 85px;
+    margin: 3px;;
+}
+.bang li:hover{
+    background-color: #5761ff;
+}
+.bang li.active{
+    background-color: #ff84c7;   
+}
+.bang li.active img{
+    filter: invert(1);
+}
+.bang li:hover img{
+    filter: invert(1);
+}
+.hienthichucnang{
+    margin-left: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 815px;
+    width: 740px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    background: url(background1.jpg);
+    background-size: contain;
+}
+.chucnangchung{
+    display: flex;
+    justify-content: center;
+}
+.tab-container {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    border-top-left-radius:10px;
+    border: 1px solid #5761ff;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .tab.not-active::after:not(last-child){
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: 0px;
+    left: 100%;
+    z-index: 1;
+    border-right: #5761ff;
+  }
+  .tab.not-active::before:not(last-child){
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #5761ff;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+  }
+  .tab.active::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #5761ff;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: 0px;
+    left: 100%;
+    z-index: 1;
+  }
+  .tab.active{
+    background-color: #5761ff;
+    color: #fff;
+  }
+  
+  .tab {
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: #5761ff;
+    text-shadow: none;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 40px!important;
+    padding-right: 30px;
+  }
+  .tab:last-child{
+    padding-right:40px;
+  }
+  
+  .tab-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .tab-content.show {
+    display: block;
+    width: 100%;
+  }
+  .mauchu{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .main-chucnang{
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 2px -2px 24px 0px rgba(129,129,129,0.75); 
+  }
+  #tab1 textarea{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 6%;
+    background: #f5f5f5;
+    border-radius: 15px;
+    border: 1px solid #b9b9b9;
+    resize: none;
+    height: 90px;
+    display: block;
+    width: 340px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  #tab1 textarea::placeholder{
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #a59999;
+  }
+  #tab1 textarea:focus{
+    border: 1px solid grey;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+  #tab1 textarea:focus-visible{
+    border: none;
+    -webkit-focus-ring-color: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+  .tab-content p{
+    font-size: 17px;
+    font-weight: 600;
+    color:#9a9a9a;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mauchu i{
+    font-size: 30px;
+  }
+
+  i.mau1.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 253, 207) 0px 0px 8px, rgb(255, 253, 207) 0px 0px 12px, rgb(255, 253, 207) 0px 0px 16px, rgb(255, 253, 207) 0px 0px 22px, rgb(255, 253, 207) 0px 0px 30px;
+  }
+  i.mau2.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(225, 227, 230) 0px 0px 8px, rgb(225, 227, 230) 0px 0px 12px, rgb(225, 227, 230) 0px 0px 16px, rgb(225, 227, 230) 0px 0px 22px, rgb(225, 227, 230) 0px 0px 30px;
+  }
+  i.mau3.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 249, 124) 0px 0px 8px, rgb(255, 249, 124) 0px 0px 12px, rgb(255, 249, 124) 0px 0px 16px, rgb(255, 249, 124) 0px 0px 22px, rgb(255, 249, 124) 0px 0px 30px;
+  }
+  i.mau4.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 214, 46) 0px 0px 8px, rgb(255, 214, 46) 0px 0px 12px, rgb(255, 214, 46) 0px 0px 16px, rgb(255, 214, 46) 0px 0px 22px, rgb(255, 214, 46) 0px 0px 30px;
+  }
+  i.mau5.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 141, 2) 0px 0px 8px, rgb(255, 141, 2) 0px 0px 12px, rgb(255, 141, 2) 0px 0px 16px, rgb(255, 141, 2) 0px 0px 22px, rgb(255, 141, 2) 0px 0px 30px;
+  }
+  i.mau6.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 117, 117) 0px 0px 8px, rgb(255, 117, 117) 0px 0px 12px, rgb(255, 117, 117) 0px 0px 16px, rgb(255, 117, 117) 0px 0px 22px, rgb(255, 117, 117) 0px 0px 30px;
+  }
+  i.mau7.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 42, 77) 0px 0px 8px, rgb(255, 42, 77) 0px 0px 12px, rgb(255, 42, 77) 0px 0px 16px, rgb(255, 42, 77) 0px 0px 22px, rgb(255, 42, 77) 0px 0px 30px;
+  }
+  i.mau8.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 144, 255) 0px 0px 8px, rgb(255, 144, 255) 0px 0px 12px, rgb(255, 144, 255) 0px 0px 16px, rgb(255, 144, 255) 0px 0px 22px, rgb(255, 144, 255) 0px 0px 30px;
+  }
+  i.mau9.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(234, 164, 255) 0px 0px 8px, rgb(234, 164, 255) 0px 0px 12px, rgb(234, 164, 255) 0px 0px 16px, rgb(234, 164, 255) 0px 0px 22px, rgb(234, 164, 255) 0px 0px 30px;
+  }
+  i.mau10.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 92, 232) 0px 0px 8px, rgb(255, 92, 232) 0px 0px 12px, rgb(255, 92, 232) 0px 0px 16px, rgb(255, 92, 232) 0px 0px 22px, rgb(255, 92, 232) 0px 0px 30px;
+  }
+  i.mau11.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(140, 89, 255) 0px 0px 8px, rgb(140, 89, 255) 0px 0px 12px, rgb(140, 89, 255) 0px 0px 16px, rgb(140, 89, 255) 0px 0px 22px, rgb(140, 89, 255) 0px 0px 30px;
+  }
+  i.mau12.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(2, 116, 252) 0px 0px 8px, rgb(2, 116, 252) 0px 0px 12px, rgb(2, 116, 252) 0px 0px 16px, rgb(2, 116, 252) 0px 0px 22px, rgb(2, 116, 252) 0px 0px 30px;
+  }
+  i.mau13.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(99, 170, 255) 0px 0px 8px, rgb(99, 170, 255) 0px 0px 12px, rgb(99, 170, 255) 0px 0px 16px, rgb(99, 170, 255) 0px 0px 22px, rgb(99, 170, 255) 0px 0px 30px;
+  }
+  i.mau14.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(144, 220, 255) 0px 0px 8px, rgb(144, 220, 255) 0px 0px 12px, rgb(144, 220, 255) 0px 0px 16px, rgb(144, 220, 255) 0px 0px 22px, rgb(144, 220, 255) 0px 0px 30px;
+  }
+  i.mau15.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(36, 183, 222) 0px 0px 8px, rgb(36, 183, 222) 0px 0px 12px, rgb(36, 183, 222) 0px 0px 16px, rgb(36, 183, 222) 0px 0px 22px, rgb(36, 183, 222) 0px 0px 30px;
+  }
+  i.mau16.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(128, 255, 217) 0px 0px 8px, rgb(128, 255, 217) 0px 0px 12px, rgb(128, 255, 217) 0px 0px 16px, rgb(128, 255, 217) 0px 0px 22px, rgb(128, 255, 217) 0px 0px 30px;
+  }
+  i.mau17.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(133, 255, 170) 0px 0px 8px, rgb(133, 255, 170) 0px 0px 12px, rgb(133, 255, 170) 0px 0px 16px, rgb(133, 255, 170) 0px 0px 22px, rgb(133, 255, 170) 0px 0px 30px;
+  }
+  i.mau18.active{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(11, 215, 72) 0px 0px 8px, rgb(11, 215, 72) 0px 0px 12px, rgb(11, 215, 72) 0px 0px 16px, rgb(11, 215, 72) 0px 0px 22px, rgb(11, 215, 72) 0px 0px 30px;
+  }
+  .custom-color{
+    transition: all .4s;
+  }
+
+  i.mau1:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 253, 207) 0px 0px 8px, rgb(255, 253, 207) 0px 0px 12px, rgb(255, 253, 207) 0px 0px 16px, rgb(255, 253, 207) 0px 0px 22px, rgb(255, 253, 207) 0px 0px 30px;
+  }
+  i.mau2:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(225, 227, 230) 0px 0px 8px, rgb(225, 227, 230) 0px 0px 12px, rgb(225, 227, 230) 0px 0px 16px, rgb(225, 227, 230) 0px 0px 22px, rgb(225, 227, 230) 0px 0px 30px;
+  }
+  i.mau3:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 249, 124) 0px 0px 8px, rgb(255, 249, 124) 0px 0px 12px, rgb(255, 249, 124) 0px 0px 16px, rgb(255, 249, 124) 0px 0px 22px, rgb(255, 249, 124) 0px 0px 30px;
+  }
+  i.mau4:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 214, 46) 0px 0px 8px, rgb(255, 214, 46) 0px 0px 12px, rgb(255, 214, 46) 0px 0px 16px, rgb(255, 214, 46) 0px 0px 22px, rgb(255, 214, 46) 0px 0px 30px;
+  }
+  i.mau5:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 141, 2) 0px 0px 8px, rgb(255, 141, 2) 0px 0px 12px, rgb(255, 141, 2) 0px 0px 16px, rgb(255, 141, 2) 0px 0px 22px, rgb(255, 141, 2) 0px 0px 30px;
+  }
+  i.mau6:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 117, 117) 0px 0px 8px, rgb(255, 117, 117) 0px 0px 12px, rgb(255, 117, 117) 0px 0px 16px, rgb(255, 117, 117) 0px 0px 22px, rgb(255, 117, 117) 0px 0px 30px;
+  }
+  i.mau7:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 42, 77) 0px 0px 8px, rgb(255, 42, 77) 0px 0px 12px, rgb(255, 42, 77) 0px 0px 16px, rgb(255, 42, 77) 0px 0px 22px, rgb(255, 42, 77) 0px 0px 30px;
+  }
+  i.mau8:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 144, 255) 0px 0px 8px, rgb(255, 144, 255) 0px 0px 12px, rgb(255, 144, 255) 0px 0px 16px, rgb(255, 144, 255) 0px 0px 22px, rgb(255, 144, 255) 0px 0px 30px;
+  }
+  i.mau9:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(234, 164, 255) 0px 0px 8px, rgb(234, 164, 255) 0px 0px 12px, rgb(234, 164, 255) 0px 0px 16px, rgb(234, 164, 255) 0px 0px 22px, rgb(234, 164, 255) 0px 0px 30px;
+  }
+  i.mau10:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 92, 232) 0px 0px 8px, rgb(255, 92, 232) 0px 0px 12px, rgb(255, 92, 232) 0px 0px 16px, rgb(255, 92, 232) 0px 0px 22px, rgb(255, 92, 232) 0px 0px 30px;
+  }
+  i.mau11:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(140, 89, 255) 0px 0px 8px, rgb(140, 89, 255) 0px 0px 12px, rgb(140, 89, 255) 0px 0px 16px, rgb(140, 89, 255) 0px 0px 22px, rgb(140, 89, 255) 0px 0px 30px;
+  }
+  i.mau12:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(2, 116, 252) 0px 0px 8px, rgb(2, 116, 252) 0px 0px 12px, rgb(2, 116, 252) 0px 0px 16px, rgb(2, 116, 252) 0px 0px 22px, rgb(2, 116, 252) 0px 0px 30px;
+  }
+  i.mau13:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(99, 170, 255) 0px 0px 8px, rgb(99, 170, 255) 0px 0px 12px, rgb(99, 170, 255) 0px 0px 16px, rgb(99, 170, 255) 0px 0px 22px, rgb(99, 170, 255) 0px 0px 30px;
+  }
+  i.mau14:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(144, 220, 255) 0px 0px 8px, rgb(144, 220, 255) 0px 0px 12px, rgb(144, 220, 255) 0px 0px 16px, rgb(144, 220, 255) 0px 0px 22px, rgb(144, 220, 255) 0px 0px 30px;
+  }
+  i.mau15:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(36, 183, 222) 0px 0px 8px, rgb(36, 183, 222) 0px 0px 12px, rgb(36, 183, 222) 0px 0px 16px, rgb(36, 183, 222) 0px 0px 22px, rgb(36, 183, 222) 0px 0px 30px;
+  }
+  i.mau16:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(128, 255, 217) 0px 0px 8px, rgb(128, 255, 217) 0px 0px 12px, rgb(128, 255, 217) 0px 0px 16px, rgb(128, 255, 217) 0px 0px 22px, rgb(128, 255, 217) 0px 0px 30px;
+  }
+  i.mau17:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(133, 255, 170) 0px 0px 8px, rgb(133, 255, 170) 0px 0px 12px, rgb(133, 255, 170) 0px 0px 16px, rgb(133, 255, 170) 0px 0px 22px, rgb(133, 255, 170) 0px 0px 30px;
+  }
+  i.mau18:hover{
+    color: white!important;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(11, 215, 72) 0px 0px 8px, rgb(11, 215, 72) 0px 0px 12px, rgb(11, 215, 72) 0px 0px 16px, rgb(11, 215, 72) 0px 0px 22px, rgb(11, 215, 72) 0px 0px 30px;
+  }
+  #chuhienthi.active{
+    top: 17%;
+    font-variant-ligatures: no-common-ligatures;
+    font-size: 95px;
+    white-space: nowrap;
+    line-height: 115%;
+    color: white;
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 144, 255) 0px 0px 20px, rgb(255, 144, 255) 0px 0px 30px, rgb(255, 144, 255) 0px 0px 40px, rgb(255, 144, 255) 0px 0px 55px, rgb(255, 144, 255) 0px 0px 75px;
+  }
+  #chuhienthi{
+    top: 17%;
+    font-variant-ligatures: no-common-ligatures;
+    font-size: 95px;
+    white-space: nowrap;
+    line-height: 115%;
+    text-shadow: rgb(181, 181, 181) 0px 1px 0px, rgb(169, 169, 169) 0px 2px 0px, rgb(148, 148, 148) 0px 3px 0px, rgb(125, 125, 125) 0px 4px 0px, rgba(0, 0, 0, 0.23) 0px 0px 5px, rgba(0, 0, 0, 0.43) 0px 1px 3px, rgba(0, 0, 0, 0.4) 1px 4px 6px, rgba(0, 0, 0, 0.38) 0px 5px 10px, rgba(0, 0, 0, 0.25) 3px 7px 12px;
+    color: rgb(244, 244, 244);
+  }
+  
+  .label {
+    height: 60px;
+    width: 120px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+      inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+      inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+      inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+      inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+  }
+  
+  .label:hover {
+    -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+    transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+  }
+  
+  #checkbox:checked ~ .label:hover {
+    -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+    transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+  }
+  
+  #checkbox {
+    display: none;
+  }
+  
+  #checkbox:checked ~ .label::before {
+    left: 70px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .label::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-image: linear-gradient(
+      130deg,
+      #757272 10%,
+      #ffffff 11%,
+      #726f6f 62%
+    );
+    left: 10px;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
